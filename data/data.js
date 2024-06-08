@@ -1,10 +1,3 @@
-const element = document.createElement("div");
-element.style.backgroundColor = "#769656";
-element.style.width = "200px";
-element.style.height = "200px";
-
-document.getElementsByTagName("div")[0].appendChild(element);
-
 // For each square
 function square(color, id, piece){
     return {color, id, piece}
@@ -17,10 +10,10 @@ function squareRow(rowID){
     if (rowID % 2 == 0){
         for (let j = 0; j<8; j++){
             if (j%2 == 0){
-                squareRow.push(square('white', String(charArray[j]+rowID), null))
+                squareRow.push(square('#eeeed2', String(charArray[j]+rowID), null))
             }
             else{
-                squareRow.push(square('black', String(charArray[j]+rowID), null))
+                squareRow.push(square('#769656', String(charArray[j]+rowID), null))
             }
             
         }
@@ -28,10 +21,10 @@ function squareRow(rowID){
     else{
         for (let j = 0; j<8; j++){
             if (j%2 == 0){
-                squareRow.push(square('black', String(charArray[j]+rowID), null))
+                squareRow.push(square('#769656', String(charArray[j]+rowID), null))
             }
             else{
-                squareRow.push(square('white', String(charArray[j]+rowID), null))
+                squareRow.push(square('#eeeed2', String(charArray[j]+rowID), null))
             }
             
         }

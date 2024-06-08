@@ -1,3 +1,4 @@
 import { initGame } from "./data/data.js";
+import { initGameRender } from "./Render/main.js";
 
-console.log(initGame());
+initGameRender(initGame());
