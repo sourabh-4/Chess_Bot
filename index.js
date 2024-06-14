@@ -6,3 +6,5 @@ const globalState = initGame();
 
 initGameRender(globalState);
 GlobalEvent();
+
+export { globalState };
