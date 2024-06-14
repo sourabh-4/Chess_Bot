@@ -1,6 +1,5 @@
 import * as piece from "../data/pieces.js";
-
-const ROOT_DIV = document.getElementById("root");
+import {ROOT_DIV} from "../Helper/constants.js";
 
 //use when you want to render pieces on the board
 function pieceRender(data) {
@@ -94,7 +93,6 @@ function initGameRender(data) {
                 square.piece = piece.whiteQueen(square.id);
             }
 
-            
             
             rowEl.appendChild(squareDiv);
         });
