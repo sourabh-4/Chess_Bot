@@ -1,4 +1,6 @@
 import { initGame } from "./data/data.js";
 import { initGameRender } from "./Render/main.js";
 
-initGameRender(initGame());
+const globalState = initGame();
+
+initGameRender(globalState);
